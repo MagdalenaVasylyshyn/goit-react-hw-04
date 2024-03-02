@@ -48,6 +48,9 @@ export default function App() {
     setError(null);
     setPhotos([]);
     setTotalPages(0);
+    if (resQuery === query) {
+      return;
+    }
   }
 
   function handleLoadMore() {
